@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "apercu-pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../apercu/Apercu_Regular.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "apercu-pro";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../apercu/Apercu\ Medium.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "apercu-pro";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../apercu/Apercu\ Bold.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "apercu-pro";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../apercu/Apercu\ Mono.otf") format("truetype");
+  }
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
